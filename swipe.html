@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let num = [3,3,3,0,1,1,4,4,9]
+
+let a = 3
+let b = 9
+let countA=0
+let countB=0
+
+for(let i=0;i<num.length;i++){
+  // console.log(num[i])
+  if(num[i]==a){
+    countA++
+  }
+  else if(num[i] ==b){
+    countB++
+  }
+}
+
+for(let i=0;i<num.length;i++){
+  if(num[i]==a){
+    num[i]= b
+  }
+  else if(num[i] == b){
+    num[i]= a
+  }
+}
+console.log(num)
+</script>
+</html>
